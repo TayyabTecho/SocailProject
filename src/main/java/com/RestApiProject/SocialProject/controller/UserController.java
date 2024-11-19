@@ -7,6 +7,7 @@ import com.RestApiProject.SocialProject.service.UserService;
 import jakarta.servlet.http.PushBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,6 +38,7 @@ public class UserController {
     }
     @DeleteMapping("/{userId}")
     public String deleteById(@PathVariable Long userId){
+        //service.deleteById(userId);
         return service.deleteById(userId);
     }
 //@GetMapping("/{userId}")
