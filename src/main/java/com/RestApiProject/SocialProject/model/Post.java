@@ -12,15 +12,12 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long postId;
-
-
     private String title;
     private String content;
     private String created_at;
     private String updated_at;
 
-    @ManyToOne
+@ManyToOne
     @JoinColumn(name = "author_id")
     private User users;
-
  }

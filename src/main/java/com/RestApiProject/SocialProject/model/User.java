@@ -3,9 +3,11 @@ package com.RestApiProject.SocialProject.model;
 import com.RestApiProject.SocialProject.request.UserRequest;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@NoArgsConstructor
 @Table(name = "users")
 public class User {
     @Id
